@@ -1,0 +1,28 @@
+{
+  "name": "pokelist-quiz-4bhif-alexgeorgerob",
+  "version": "1.0.0",
+  "description": "In this exercise, you have to implement a website that uses a RESTful Web API in the background. You have to create the website from scratch without any initial templates to build on. Feel free to use prior homeworks or samples from the course material as a starting point.",
+  "main": "index.js",
+  "scripts": {
+    "copy-bootstrap": "cpx ./node_modules/bootstrap/dist/css/bootstrap.css dist/ && cpx ./node_modules/bootstrap/dist/js/bootstrap.js dist/",
+    "copy-jquery": "cpx ./node_modules/jquery/dist/jquery.js dist/",
+    "build": "cpx *.{html,css} dist/ && npm run copy-bootstrap && npm run copy-jquery",
+    "start": "browser-sync start --server --files='*.html,*.js,*.css'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rstropek-teaching/pokelist-quiz-4bhif-AlexGeorgeRob.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rstropek-teaching/pokelist-quiz-4bhif-AlexGeorgeRob/issues"
+  },
+  "homepage": "https://github.com/rstropek-teaching/pokelist-quiz-4bhif-AlexGeorgeRob#readme",
+  "dependencies": {
+    "@types/jquery": "^3.2.16",
+    "bootstrap": "^4.0.0-alpha.6",
+    "browser-sync": "^2.18.13",
+    "jquery": "^3.2.1"
+  }
+}
